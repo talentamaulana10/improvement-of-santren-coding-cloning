@@ -3,14 +3,56 @@ import React,{Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Home from './pages/Home.js';
+import Kajian from './pages/Kajian'
+import NavBar from './component/Navbar'
+import Kitab from './pages/Kitab'
+import Kitab from './pages/Mondok'
 
 class App extends Component {
+  state = {
+    isPage : "Home"
+  }
+
+  changePage =(page)=>{
+    this.setState({
+      isPage : page
+    })
+  }
+
+
   render() {
-    return (
-      <div>
-        <Home/>
-      </div>
-    )
+    if(this.state.isPage === "Home"){
+      return (
+        <div>
+          <NavBar changePage={this.changePage} />
+          <Home/>
+        </div>
+      )
+    }else if(this.state.isPage === "Kajian"){
+      return (
+        <div>
+          <NavBar  changePage={this.changePage} />
+          <Kajian />    
+       </div>
+      )
+    }
+    else if(this.state.isPage === "Kitab"){
+      return(
+        <div>
+          <NavBar changePage={this.changePage}/>
+          <Kitab/>
+        </div>
+      )
+    }
+    else if(this.state.isPage === "Mondok"){
+      return(
+        <div>
+          <NavBar changePage={this.changePage}/>
+          <Kitab/>
+        </div>
+      )
+    }
+
   }
 }
 

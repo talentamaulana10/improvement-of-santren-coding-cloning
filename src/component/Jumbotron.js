@@ -6,8 +6,9 @@ export default class JumboTron extends Component{
             <div>
                 <Jumbotron fluid>
                 <Container fluid>
-                <h1>my name is fighan</h1>
+                <h1>imgmy name is fighan</h1>
                 <p>i,m from semarangdc</p>
+                <button>mulai belajar</button>
                 </Container>
                 </Jumbotron>
             </div>
