@@ -8,6 +8,7 @@ import NavBar from './component/Navbar'
 import Kitab from './pages/Kitab'
 import Mondok from './pages/Mondok'
 
+
 class App extends Component {
   state = {
     isPage : "Home"
@@ -26,6 +27,7 @@ class App extends Component {
         <div>
           <NavBar changePage={this.changePage} />
           <Home/>
+          
         </div>
       )
     }else if(this.state.isPage === "Kajian"){
