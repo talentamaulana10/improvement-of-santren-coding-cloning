@@ -6,7 +6,7 @@ import Home from './pages/Home.js';
 import Kajian from './pages/Kajian'
 import NavBar from './component/Navbar'
 import Kitab from './pages/Kitab'
-import Kitab from './pages/Mondok'
+import Mondok from './pages/Mondok'
 
 class App extends Component {
   state = {
@@ -48,7 +48,7 @@ class App extends Component {
       return(
         <div>
           <NavBar changePage={this.changePage}/>
-          <Kitab/>
+          <Mondok/>
         </div>
       )
     }
