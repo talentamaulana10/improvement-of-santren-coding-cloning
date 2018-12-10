@@ -8,8 +8,8 @@ export default class NavBar extends Component{
         return(
             <div>
                <Navbar>
-                  
-                   <NavbarBrand className="mynav" onClick={()=>this.props.changePage("Home")}>Santren Koding</NavbarBrand>
+                   
+                   <NavbarBrand className="mynav" onClick={()=>this.props.changePage("Home")}><img src="kode.png"/>Santren Koding</NavbarBrand>
                    
                    <Nav>
                        <NavItem className ="navbarku" onClick={()=>this.props.changePage("Kajian")} >Kajian Koding</NavItem>
