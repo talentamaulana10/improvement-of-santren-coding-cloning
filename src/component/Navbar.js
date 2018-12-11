@@ -7,9 +7,9 @@ export default class NavBar extends Component{
     render(){
         return(
             <div>
-               <Navbar>
-                  
-                   <NavbarBrand className="mynav" onClick={()=>this.props.changePage("Home")}>Santren Koding</NavbarBrand>
+               <Navbar className="fixed">
+                   
+                   <NavbarBrand className="mynav" onClick={()=>this.props.changePage("Home")}><img src="https://firebasestorage.googleapis.com/v0/b/santren-koding.appspot.com/o/santrenkoding_logo.png?alt=media&token=83a08081-4259-4b18-8600-c70af12d89bc"/>Santren Koding</NavbarBrand>
                    
                    <Nav>
                        <NavItem className ="navbarku" onClick={()=>this.props.changePage("Kajian")} >Kajian Koding</NavItem>

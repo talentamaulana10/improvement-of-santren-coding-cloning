@@ -7,6 +7,7 @@ import Kajian from './pages/Kajian'
 import NavBar from './component/Navbar'
 import Kitab from './pages/Kitab'
 import Mondok from './pages/Mondok'
+import Tata from './component/Card'
 
 
 class App extends Component {
@@ -27,7 +28,7 @@ class App extends Component {
         <div>
           <NavBar changePage={this.changePage} />
           <Home/>
-          
+          <Tata/>
         </div>
       )
     }else if(this.state.isPage === "Kajian"){
@@ -35,6 +36,7 @@ class App extends Component {
         <div>
           <NavBar  changePage={this.changePage} />
           <Kajian />    
+          <Tata/>
        </div>
       )
     }
