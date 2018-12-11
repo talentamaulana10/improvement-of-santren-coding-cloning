@@ -5,7 +5,7 @@ export default class Isi extends Component{
         return(
             <div>
               
-                <h1>ini kajian</h1>
+                
             </div>
         )
     }

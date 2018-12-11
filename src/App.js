@@ -36,6 +36,7 @@ class App extends Component {
         <div>
           <NavBar  changePage={this.changePage} />
           <Kajian />    
+          <Tata/>
        </div>
       )
     }
