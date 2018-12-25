@@ -6,7 +6,9 @@ import Kajian from './pages/Kajian';
 import NavBar from './component/Navbar';
 import Kitab from './pages/Kitab';
 import Mondok from './pages/Mondok';
-
+import Book from './pages/Book';
+import Author from './pages/Author';
+import { Route, Switch } from 'react-router-dom';
 import WebApp from './pages/app';
 import Axios from 'axios';
 
@@ -33,7 +35,11 @@ class App extends Component {
     const { posts } = this.state;
     return (
       <div>
-        <Home posts={this.state.posts} />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/book" component={Book} />
+          <Route path="/author" component={Author} />
+        </Switch>
       </div>
     );
   }

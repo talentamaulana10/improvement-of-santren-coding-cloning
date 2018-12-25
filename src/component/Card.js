@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Card,
   CardImg,
-  CardText,
   CardBody,
   CardTitle,
   CardSubtitle,
@@ -10,7 +9,7 @@ import {
 } from 'reactstrap';
 
 const Cards = props => {
-  const { id, judul, create } = props;
+  const { id, judul } = props;
   return (
     <div>
       <Card>
@@ -18,7 +17,7 @@ const Cards = props => {
         <CardBody>
           <CardTitle>{id}</CardTitle>
           <CardSubtitle>{judul}</CardSubtitle>
-          <CardText>{create}</CardText>
+
           <Button>hapus</Button>
         </CardBody>
       </Card>

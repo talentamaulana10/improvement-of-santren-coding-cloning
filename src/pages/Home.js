@@ -4,13 +4,10 @@ export default class Home extends Component {
   render() {
     console.log(this.props.posts);
     const { posts } = this.props;
+
     return (
       <div>
-        {posts.map((value, index) => {
-          return (
-            <Card id={value.id} judul={value.judul} create={value.create} />
-          );
-        })}
+        <h1>ini home</h1>
       </div>
     );
   }
