@@ -1,16 +1,17 @@
-import React,{Component} from 'react'
-import NavBar from '../component/Navbar'
-import JumboTron from '../component/Jumbotron'
-export default class Home extends Component{
-    
-    render(){
-        return(
-            <div>
-              
-                <JumboTron/> 
-            </div>
-        );
-            
-        
-    }
+import React, { Component } from 'react';
+import Card from '../component/Card';
+export default class Home extends Component {
+  render() {
+    console.log(this.props.posts);
+    const { posts } = this.props;
+    return (
+      <div>
+        {posts.map((value, index) => {
+          return (
+            <Card id={value.id} judul={value.judul} create={value.create} />
+          );
+        })}
+      </div>
+    );
+  }
 }
